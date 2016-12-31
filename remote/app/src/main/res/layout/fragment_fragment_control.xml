@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.jll.remote.control">
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:text="STOP"
+        android:onClick="bt"
+        android:id="@+id/btnStop"
+        android:background="@drawable/stopbtn"
+        android:layout_below="@+id/D"
+        android:layout_toRightOf="@+id/D"
+        android:layout_toEndOf="@+id/D" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="UP"
+        android:id="@+id/buttonU"
+        android:background="@drawable/control_select"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/D"
+        android:layout_alignStart="@+id/D" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="LEFT"
+        android:id="@+id/L"
+        android:background="@drawable/con2"
+        android:layout_alignTop="@+id/R"
+        android:layout_toLeftOf="@+id/buttonU"
+        android:layout_toStartOf="@+id/buttonU" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="RIGHT"
+        android:id="@+id/R"
+        android:background="@drawable/con3"
+        android:layout_below="@+id/buttonU"
+        android:layout_toRightOf="@+id/buttonU"
+        android:layout_toEndOf="@+id/buttonU" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="DOWM"
+        android:id="@+id/D"
+        android:background="@drawable/con1"
+        android:layout_below="@+id/L"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

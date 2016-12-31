@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jll.remote.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout2">
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<Button-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:text="Search Device"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="28dp"-->
+                <!--android:id="@+id/btnSearch"-->
+                <!--android:onClick="btnSearch"-->
+                <!--android:paddingLeft="15dp"-->
+                <!--android:drawableLeft="@drawable/search1"-->
+                <!--android:background="@drawable/button_select"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+            <!--<ListView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="434dp"-->
+                <!--android:id="@+id/lv"-->
+                <!--android:layout_below="@+id/btnSearch" />-->
+        <!--</RelativeLayout>-->
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/bg_white"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Connect"
+            android:gravity="center"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_channel"
+            android:padding="5dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:text="连接模式"
+            android:layout_weight="0.50" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="控制模式"
+            android:id="@+id/Control"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_message"
+            android:padding="5dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:layout_weight="0.24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="随机模式"
+            android:id="@+id/Random"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_better"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:layout_weight="0.31" />
+    </LinearLayout>
+</RelativeLayout>
+
